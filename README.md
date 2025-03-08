@@ -4,6 +4,7 @@ Script para automatizar a instalação dos temas Light e Dark e configurar para 
 
 ```bash
 git clone git@github.com:Diego-Brocanelli/whitesur-gtk-theme-script.git ~/macos-theme && \
-sudo shmod +x *.sh && \\
+cd ~/macos-theme && \
+sudo shmod +x *.sh && \
 ./install-whitesur.sh
 ```
