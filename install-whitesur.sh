@@ -75,7 +75,9 @@ cd ..
 
 echo "🖼️ Baixando e instalando os wallpapers do WhiteSur..."
 git clone --depth=1 https://github.com/vinceliuice/WhiteSur-wallpapers.git
-cp -r WhiteSur-wallpapers/wallpapers/* ~/Imagens/Wallpapers/
+cp -r WhiteSur-wallpapers/1080p/*.jpg ~/Imagens/Wallpapers/
+cp -r WhiteSur-wallpapers/2k/*.jpg ~/Imagens/Wallpapers/
+cp -r WhiteSur-wallpapers/4k/*.jpg ~/Imagens/Wallpapers/
 rm -rf WhiteSur-wallpapers
 
 echo "🔤 Baixando e instalando a fonte SF Pro Display..."
