@@ -1,5 +1,42 @@
 #!/bin/bash
 
+# Atualizando o sistema
+echo "🛠️ Atualizando o sistema..."
+sudo apt update && sudo apt upgrade -y
+
+# Instalando o GNOME Tweaks
+echo "📦 Instalando o GNOME Tweaks..."
+sudo apt install gnome-tweaks -y
+
+# Instalando o Extension Manager (por Matthew Jakenman)
+echo "📦 Instalando Extension Manager..."
+sudo apt install gnome-shell-extension-manager -y
+
+# Instalando as extensões
+echo "📦 Instalando extensões GNOME..."
+gnome-extensions install --no-local https://extensions.gnome.org/extension/4103/blur-my-shell/
+gnome-extensions install --no-local https://extensions.gnome.org/extension/3772/compix-alike-magic-lamp-effect/
+gnome-extensions install --no-local https://extensions.gnome.org/extension/1039/night-theme-switcher/
+gnome-extensions install --no-local https://extensions.gnome.org/extension/19/user-themes/
+
+# Ativando as extensões
+echo "⚙️ Ativando as extensões..."
+
+# Blur my Shell
+gnome-extensions enable blur-my-shell@aunetx.gmail.com
+
+# Compix Alike Magic Lamp Effect
+gnome-extensions enable compix-alike-magic-lamp-effect@hanselmeister.com
+
+# Night Theme Switcher
+gnome-extensions enable night-theme-switcher@gnome-shell-extensions.gcampax.github.com
+
+# User Themes
+gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+
+# Confirmação
+echo "✅ Extensões instaladas e ativadas com sucesso!"
+
 echo "🔧 Instalando dependências..."
 sudo dnf install -y git \ 
     gtk-murrine-engine \
