@@ -28,11 +28,20 @@ gnome-extensions enable blur-my-shell@aunetx.gmail.com
 # Compix Alike Magic Lamp Effect
 gnome-extensions enable compix-alike-magic-lamp-effect@hanselmeister.com
 
+# Compiz Windows Effect
+gnome-extensions enable compiz-windows-effect@hermes83.github.com
+
 # Night Theme Switcher
 gnome-extensions enable night-theme-switcher@gnome-shell-extensions.gcampax.github.com
 
 # User Themes
 gnome-extensions enable user-theme@gnome-shell-extensions.gcampax.github.com
+
+# Search Light
+gnome-extensions enable search-light@icedman.github.com
+
+# GNOME 4x UI Improvements
+gnome-extensions enable gnome-4x-ui-improvements@mmprophet.gmail.com
 
 # Confirmação
 echo "✅ Extensões instaladas e ativadas com sucesso!"
@@ -46,7 +55,7 @@ sudo dnf install -y git \
     ostree
 
 # Criar pastas necessárias
-mkdir -p ~/.themes ~/.icons ~/Imagens/Wallpapers ~/.fonts
+mkdir -p ~/.themes ~/.icons ~/images/wallpapers ~/.fonts
 
 echo "🎨 Baixando e instalando o WhiteSur Theme..."
 git clone --depth=1 https://github.com/vinceliuice/WhiteSur-gtk-theme.git
@@ -75,9 +84,9 @@ cd ..
 
 echo "🖼️ Baixando e instalando os wallpapers do WhiteSur..."
 git clone --depth=1 https://github.com/vinceliuice/WhiteSur-wallpapers.git
-cp -r WhiteSur-wallpapers/1080p/*.jpg ~/Imagens/Wallpapers/
-cp -r WhiteSur-wallpapers/2k/*.jpg ~/Imagens/Wallpapers/
-cp -r WhiteSur-wallpapers/4k/*.jpg ~/Imagens/Wallpapers/
+cp -r WhiteSur-wallpapers/1080p/*.jpg ~/images/wallpapers/
+cp -r WhiteSur-wallpapers/2k/*.jpg ~/images/wallpapers/
+cp -r WhiteSur-wallpapers/4k/*.jpg ~/images/wallpapers/
 rm -rf WhiteSur-wallpapers
 
 echo "🔤 Baixando e instalando a fonte SF Pro Display..."
