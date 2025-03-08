@@ -39,7 +39,4 @@ gsettings set org.gnome.desktop.wm.preferences theme "WhiteSur-Light"
 
 config_gtk4
 
-nautilus -q > /dev/null 2>&1
-nautilus -w &> /dev/null &
-
 echo "🎨 Tema WhiteSur Light aplicado com sucesso!"
