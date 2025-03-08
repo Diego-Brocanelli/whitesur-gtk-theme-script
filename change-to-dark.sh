@@ -27,17 +27,6 @@ config_gtk4() {
   echo "Installed ${name}${color}${opacity}${alt}${theme}${scheme} gtk-4.0 theme in '${HOME}/.config/gtk-4.0' for libadwaita!"
 }
 
-# cd WhiteSur-gtk-theme
-# ./install.sh --dest $HOME/.themes \
-#     --color light \
-#     --libadwaita \
-#     --monterey \
-#     --nautilus glassy \
-#     --fixed \
-#     --round
-
-# cd ..
-
 # Aplicar o tema no GNOME Shell
 echo "☀️ Definindo tema, ícones e fonte para Dark Mode..."
 gsettings set org.gnome.desktop.wm.preferences theme "WhiteSur-Dark"
@@ -49,8 +38,5 @@ gsettings set org.gnome.desktop.interface font-name "SF Pro Display 11"
 gsettings set org.gnome.desktop.wm.preferences theme "WhiteSur-Dark"
 
 config_gtk4
-
-nautilus -q > /dev/null 2>&1
-nautilus -w &> /dev/null &
 
 echo "🎨 Tema WhiteSur Dark aplicado com sucesso!"
